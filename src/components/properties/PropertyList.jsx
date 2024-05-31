@@ -45,7 +45,7 @@ export default function PropertyList() {
 							</div>
 
 							<div className='items-start basis-2/4'>
-								<h2 className='text-lg md:text-2xl text-red font-bold'>
+								<h2 className='text-lg md:text-2xl text-blue font-bold'>
 									{property.name}
 								</h2>
 								<p className='text-black2 text-base'>{property.address}</p>
@@ -53,18 +53,21 @@ export default function PropertyList() {
 									{' '}
 									<MdLocationOn /> {property.location}
 								</p>
-								<p>price</p>
+								<p className='font-bold text-red text-2xl sm:text-3xl'>
+									{' '}
+									{property.price}
+								</p>
 							</div>
 						</div>
 
-						<div className='flex items-center justify-between my-3 bg-red p-4 rounded text-white'>
-							<p className='flex items-center justify-between gap-2'>
+						<div className='flex items-center justify-between my-3 bg-blue p-4 rounded text-white'>
+							<p className='flex items-center justify-between gap-2 text-xs sm:text-base'>
 								<FaBed /> {property.rooms} rooms
 							</p>
-							<p className='flex items-center justify-between gap-2'>
+							<p className='flex items-center justify-between gap-2 text-xs sm:text-base'>
 								<GiHomeGarage /> {property.garage} parking space
 							</p>
-							<p className='flex items-center justify-between gap-2'>
+							<p className='flex items-center justify-between gap-2 text-xs sm:text-base'>
 								<FaBath /> {property.bath} bathrooms
 							</p>
 						</div>

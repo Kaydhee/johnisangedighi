@@ -16,9 +16,9 @@ export default function Nav() {
 	}
 
 	return (
-		<nav className='mx-auto fixed mt-8 z-50 w-full nav'>
-			<div className='mx-auto w-[90%] backdrop-blur-md bg-white/70 shadow-md rounded-full flex items-center justify-between'>
-				<div className='w-[10rem] p-4 '>
+		<nav className='mx-auto fixed mt-8 z-50 w-full nav '>
+			<div className='mx-auto w-[90%] backdrop-blur-md bg-white/70 shadow-md rounded-full flex items-center justify-between px-3'>
+				<div className='w-[10rem] py-3'>
 					{/* <Image
 						src={logo}
 						alt='company logo'

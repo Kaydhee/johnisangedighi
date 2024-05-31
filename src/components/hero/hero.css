@@ -1,6 +1,6 @@
 .hero-section {
 	background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-		url(../../assets/background.jpg);
+		url(../../assets/background.webp);
 	background-position: center;
 	background-size: cover;
 	position: relative;
