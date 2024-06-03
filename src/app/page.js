@@ -6,7 +6,6 @@ import PropertyModal from '../components/properties/PropertyModal';
 export default function Home() {
 	return (
 		<main className='w-full h-full relative'>
-			<Nav />
 			<Hero />
 			<PropertyList />
 			<PropertyModal />
