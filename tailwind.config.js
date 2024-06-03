@@ -14,6 +14,8 @@ module.exports = {
 			black: '#000',
 			black2: '#141414',
 			transparent: 'transparent',
+			// shadow: '0 0 1.5rem 0 rgba(0, 0, 255, 0.2)',
+			transition: 'all 500ms ease',
 		},
 		// fontFamily: {
 		// 	tilt: 'Tilt Neon',
