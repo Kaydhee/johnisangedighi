@@ -22,7 +22,7 @@ export default function WhatWeDo() {
 					</p>
 				</div>
 
-				<div className='bg-blue text-white p-4 font-bold w-full text-center md:text-start md:w-1/2'>
+				<div className='bg-royalblue text-white p-4 font-bold w-full text-center md:text-start md:w-1/2'>
 					<h2 className='text-3xl mb-2'>What you are assured</h2>
 
 					<p className='text-sm'>

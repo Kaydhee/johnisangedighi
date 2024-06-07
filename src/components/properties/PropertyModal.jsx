@@ -42,7 +42,7 @@ export default function PropertyModal() {
 				</p>
 				<div className='flex gap-4'>
 					<button
-						className='mt-4 bg-blue text-white px-4 py-2 rounded'
+						className='mt-4 bg-neonblue text-white px-4 py-2 rounded'
 						onClick={() => dispatch(toggleModal())}>
 						Close
 					</button>
