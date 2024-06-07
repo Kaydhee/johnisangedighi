@@ -25,7 +25,7 @@ export default function Footer() {
 						throughout the Federal Republic of Nigeria.
 					</p>
 				</div>
-				<section className='flex flex-col items-start sm:items-center justify-center w-full md:w-[20%]'>
+				<section className='flex flex-col items-start md:items-center justify-center w-full md:w-[20%]'>
 					<h4 className='font-bold text-red mb-2'>Helpful Links</h4>
 					<ul className='flex flex-col items-start justify-center text-white text-sm cursor-pointer gap-2 '>
 						<li className='hover:font-bold flex items-center justify-between gap-2'>

@@ -2,6 +2,7 @@ import Hero from '../components/hero/Hero';
 import Nav from '../components/nav/Nav';
 import PropertyList from '../components/properties/PropertyList';
 import PropertyModal from '../components/properties/PropertyModal';
+import WhatWeDo from '../components/whatWeDo/WhatWeDo';
 
 export default function Home() {
 	return (
@@ -9,6 +10,7 @@ export default function Home() {
 			<Hero />
 			<PropertyList />
 			<PropertyModal />
+			<WhatWeDo />
 		</main>
 	);
 }

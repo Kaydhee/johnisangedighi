@@ -9,7 +9,7 @@ import SubServices from '../../components/subServices/SubServices';
 export default function Services() {
 	return (
 		<section className='listing  w-full mt-4'>
-			<section className=' w-[90%] pt-[6%] service mx-auto'>
+			<section className=' w-[90%] pt-[25%] sm:pt-[15%] md:pt-[6%] service mx-auto'>
 				<h1 className='font-bold text-2xl sm:text-3xl md:text-5xl text-blue mb-2'>
 					Services
 				</h1>
