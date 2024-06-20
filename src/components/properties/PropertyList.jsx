@@ -22,7 +22,7 @@ export default function PropertyList() {
 
 	return (
 		<section className='flex flex-col py-4 w-full relative listing '>
-			<h2 className='text-center font-bold text-2xl sm:text-3xl md:text-5xl mb-4 text-white'>
+			<h2 className='text-center font-bold text-2xl sm:text-3xl md:text-5xl mb-4 text-secondary'>
 				Featured Properties
 			</h2>
 
@@ -30,7 +30,7 @@ export default function PropertyList() {
 				{properties.map((property) => (
 					<div
 						key={property.id}
-						className='p-4  rounded shadow cursor-pointer bg-white'
+						className='p-4  rounded shadow cursor-pointer bg-primaryVariant'
 						onClick={() => handlePropertyClick(property)}>
 						<div className='flex items-start flex-col md:flex-row justify-between gap-4 '>
 							<div className='w-[10rem] h-[10rem] basis-2/4 '>
@@ -45,15 +45,15 @@ export default function PropertyList() {
 							</div>
 
 							<div className='items-start basis-2/4'>
-								<h2 className='text-base text-blue font-bold'>
+								<h2 className='text-base text-white font-bold'>
 									{property.name}
 								</h2>
-								<p className='text-black2 text-base'>{property.address}</p>
-								<p className='text-black2 text-base flex items-center justify-start gap-2'>
+								<p className='text-white text-base'>{property.address}</p>
+								<p className='text-white text-base flex items-center justify-start gap-2'>
 									{' '}
 									<MdLocationOn /> {property.location}
 								</p>
-								<p className='font-bold text-red text-base'>
+								<p className='font-bold text-white text-base'>
 									{' '}
 									{property.price}
 								</p>

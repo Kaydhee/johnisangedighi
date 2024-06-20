@@ -6,7 +6,7 @@ import WhatWeDo from '../components/whatWeDo/WhatWeDo';
 
 export default function Home() {
 	return (
-		<main className='w-full h-full relative'>
+		<main className='w-full h-full relative bg-primary'>
 			<Hero />
 			<PropertyList />
 			<PropertyModal />

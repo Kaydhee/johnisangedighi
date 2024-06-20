@@ -9,7 +9,7 @@ export default function SubServices() {
 				<section className=' flex items-center justify-between w-full gap-4 flex-wrap sm:flex-nowrap'>
 					<div className='flex flex-col gap-4'>
 						<Article>
-							<h4 className='text-blue font-bold'>MORTGAGE VALUATION</h4>
+							<h4 className='text-secondary font-bold'>MORTGAGE VALUATION</h4>
 
 							<p className='text-sm'>
 								mortgage is created where one party known as the mortgagor
@@ -26,7 +26,7 @@ export default function SubServices() {
 						</Article>
 
 						<Article>
-							<h4 className='text-blue font-bold'>PRIVATIZATION</h4>
+							<h4 className='text-secondary font-bold'>PRIVATIZATION</h4>
 
 							<p className='text-sm'>
 								This concept cameto the fore when there was widespread need for
@@ -43,7 +43,7 @@ export default function SubServices() {
 
 					<div className='flex flex-col items-center justify-between gap-4'>
 						<Article>
-							<h4 className='text-blue font-bold'>GOING CONCERN</h4>
+							<h4 className='text-secondary font-bold'>GOING CONCERN</h4>
 
 							<p className='text-sm'>
 								This is obtainable where there is need to ascertain the value of
@@ -62,7 +62,7 @@ export default function SubServices() {
 
 						<div className='flex items-center justify-between gap-4 mb-4'>
 							<Article>
-								<h4 className='text-blue font-bold '>
+								<h4 className='text-secondary font-bold '>
 									TENEMENT RATING AND COLLECTION
 								</h4>
 
@@ -75,7 +75,7 @@ export default function SubServices() {
 								</p>
 							</Article>
 							<Article>
-								<h4 className='text-blue font-bold'>
+								<h4 className='text-secondary font-bold'>
 									OIL SPILLAGE AND INJURIOUS AFFECTION
 								</h4>
 
@@ -93,7 +93,7 @@ export default function SubServices() {
 
 				<section>
 					<Article>
-						<h4 className='text-blue font-bold'>SALES AND PURCHASES</h4>
+						<h4 className='text-secondary font-bold'>SALES AND PURCHASES</h4>
 
 						<p>
 							it's advisable to esthablish the value of a property to be
@@ -106,7 +106,7 @@ export default function SubServices() {
 
 					<div className='flex items-center justify-between flex-wrap sm:flex-nowrap gap-4 mt-4'>
 						<Article>
-							<h4 className='text-blue font-bold'>
+							<h4 className='text-secondary font-bold'>
 								COMPULSORY ACQUISITION AND COMPENSATION
 							</h4>
 
@@ -119,7 +119,7 @@ export default function SubServices() {
 							</p>
 						</Article>
 						<Article>
-							<h4 className='text-blue font-bold'>PLANT AND MACHINERY</h4>
+							<h4 className='text-secondary font-bold'>PLANT AND MACHINERY</h4>
 
 							<p>
 								We also undertake the valuation of Plant and Machinery as well
@@ -129,7 +129,7 @@ export default function SubServices() {
 							</p>
 						</Article>
 						<Article>
-							<h4 className='text-blue font-bold'>
+							<h4 className='text-secondary font-bold'>
 								MERGER AND ACQUISITIONS AND TAKEOVERS
 							</h4>
 
@@ -145,7 +145,7 @@ export default function SubServices() {
 							</p>
 						</Article>
 						<Article>
-							<h4 className='text-blue font-bold'>INSURANCE</h4>
+							<h4 className='text-secondary font-bold'>INSURANCE</h4>
 
 							<p>
 								Valuation of an asset or property for insurance is required when

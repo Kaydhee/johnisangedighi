@@ -8,9 +8,9 @@ import SubServices from '../../components/subServices/SubServices';
 
 export default function Services() {
 	return (
-		<section className='listing  w-full mt-4'>
-			<section className=' w-[90%] pt-[25%] sm:pt-[15%] md:pt-[6%] service mx-auto'>
-				<h1 className='font-bold text-2xl sm:text-3xl md:text-5xl text-blue mb-2'>
+		<section className='bg-primary listing  w-full'>
+			<section className=' w-[90%] pt-[25%] sm:pt-[15%] md:pt-[6%] service mx-auto text-white'>
+				<h1 className='font-bold text-2xl sm:text-3xl md:text-5xl text-secondary mb-2'>
 					Services
 				</h1>
 				<p className='text-base'>
@@ -24,11 +24,11 @@ export default function Services() {
 				</p>
 
 				<h2>our scope of our services</h2>
-				<p className='text-2xl text-blue font-bold mt-2'>
+				<p className='text-2xl text-secondary font-bold mt-2'>
 					The scope of our professional services include the following:
 				</p>
 
-				<ul className='flex flex-col text-base text-black list-disc ml-4'>
+				<ul className='flex flex-col text-base text-white list-disc ml-4'>
 					<li>valuation for various purposes</li>
 					<li>property letting</li>
 					<li>property sales and agency</li>
@@ -37,8 +37,8 @@ export default function Services() {
 					<li>pre-investment appraisal</li>
 				</ul>
 
-				<section className='border-b-2 border-blue mb-[2%]'>
-					<h3 className='text-blue text-2xl font-bold mt-4 '>
+				<section className='border-b-2 border-secondary mb-[2%]'>
+					<h3 className='text-secondary text-2xl font-bold mt-4 '>
 						valuation for various purposes
 					</h3>
 
@@ -55,7 +55,7 @@ export default function Services() {
 					</div>
 
 					<div className='flex items-center justify-between gap-4 mb-4'>
-						<ul className='flex flex-col text-base text-black list-disc ml-4 '>
+						<ul className='flex flex-col text-base text-white list-disc ml-4 '>
 							<li>Mortgage Valuation</li>
 							<li>Going Concern</li>
 							<li>Privatization</li>
