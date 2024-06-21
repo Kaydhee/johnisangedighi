@@ -1,0 +1,48 @@
+.slider {
+	background-color: transparent;
+	padding: 1rem 0;
+	white-space: nowrap;
+	position: relative;
+	overflow: hidden;
+	mask-image: linear-gradient(
+		to right,
+		transparent,
+		#007fff 10% 90%,
+		transparent
+	);
+}
+
+.slider:hover .textSlide {
+	animation-play-state: paused;
+}
+
+.textSlide {
+	color: var(--bg-color);
+	display: inline-flex;
+	align-items: center;
+	animation: 25s slide infinite linear;
+}
+
+.textSlide p {
+	font-size: 4rem;
+	margin: 0 2.5rem;
+	color: #007fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+}
+
+.textSlide span {
+	background-color: #007fff;
+	height: 8px;
+	width: 8px;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}

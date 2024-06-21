@@ -6,6 +6,7 @@ import { Ri24HoursFill } from 'react-icons/ri';
 import { IoIosDocument } from 'react-icons/io';
 import { MdVerifiedUser } from 'react-icons/md';
 import { FaNairaSign, FaArrowRightLong } from 'react-icons/fa6';
+import Link from 'next/link';
 
 export default function WhatWeDo() {
 	return (
@@ -28,7 +29,9 @@ export default function WhatWeDo() {
 						/>
 
 						<button className='bg-secondary p-4 sm:p-6 rounded-full bottom-[-1rem] right-[-1rem] sm:bottom-[-1.5rem] sm:right-[-2rem] absolute text-2xl text-white z-10'>
-							<FaArrowRightLong />
+							<Link href='/about'>
+								<FaArrowRightLong />
+							</Link>
 						</button>
 					</div>
 				</div>

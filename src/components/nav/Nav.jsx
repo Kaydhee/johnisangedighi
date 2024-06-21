@@ -1,4 +1,6 @@
 'use client';
+import Link from 'next/link';
+// import { usePathname } from 'next/navigation';
 // import Image from 'next/image';
 // import logo from '../../assets/logo.svg';
 
@@ -15,10 +17,12 @@ export default function Nav() {
 		setIsExpanded(!isExpanded);
 	}
 
+	// const pathname = usePathname();
+
 	return (
 		<nav className='mx-auto  fixed mt-8 z-50 w-full nav '>
 			{/* <div className='mx-auto w-[90%] backdrop-blur-md bg-white/70 shadow-md rounded-full flex items-center justify-between px-3'> */}
-			<div className='mx-auto w-[90%] bg-primary shadow  rounded-full flex items-center justify-between px-3'>
+			<div className='mx-auto w-[90%] bg-primary shadow rounded-2xl flex items-center justify-between px-3'>
 				<div className='w-[10rem] py-3'>
 					{/* <Image
 						src={logo}
@@ -33,16 +37,22 @@ export default function Nav() {
 
 				<ul className='hidden md:flex items-center justify-center gap-2 cursor-pointer'>
 					<li>
-						<a href='#link3'>find a property</a>
+						<Link href='#'>find a property</Link>
+						{/* <a href='#link3'></a> */}
 					</li>
 					<li>
-						<a href='#link1'>services</a>
+						<Link href='/services'>services</Link>
+						{/* <a href='#link1'></a> */}
 					</li>
 					<li>
-						<a href='#link2'>about us</a>
+						<Link href='/about'>about us</Link>
+
+						{/* <a href='#link2'></a> */}
 					</li>
 					<li>
-						<a href='#link3'>projects</a>
+						<Link href='/projects'>projects</Link>
+
+						{/* <a href='#link3'></a> */}
 					</li>
 				</ul>
 
@@ -50,26 +60,42 @@ export default function Nav() {
 					className='md:hidden'
 					onClick={handleShowMenu}>
 					{isExpanded ? (
-						<MdOutlineClose className='text-blue text-2xl' />
+						<MdOutlineClose className='text-secondary text-2xl' />
 					) : (
-						<MdMenu className='text-blue text-2xl' />
+						<MdMenu className='text-secondary text-2xl' />
 					)}
 				</button>
 			</div>
 
 			{showMenu && (
-				<ul className='flex flex-col items-center justify-center gap-2 cursor-pointer'>
+				<ul className='flex flex-col items-center  justify-center gap-2 cursor-pointer navItems z-10'>
 					<li>
-						<a href='#link3'>find a property</a>
+						<a
+							href='#link3'
+							className='bg-primary text-secondary'>
+							find a property
+						</a>
 					</li>
 					<li>
-						<a href='#link1'>services</a>
+						<a
+							href='#link1'
+							className='bg-primary text-secondary'>
+							services
+						</a>
 					</li>
 					<li>
-						<a href='#link2'>about us</a>
+						<a
+							href='#link2'
+							className='bg-primary text-secondary'>
+							about us
+						</a>
 					</li>
 					<li>
-						<a href='#link3'>projects</a>
+						<a
+							href='#link3'
+							className='bg-primary text-secondary'>
+							projects
+						</a>
 					</li>
 				</ul>
 			)}
