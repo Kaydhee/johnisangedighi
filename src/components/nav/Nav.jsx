@@ -70,32 +70,32 @@ export default function Nav() {
 			{showMenu && (
 				<ul className='flex flex-col items-center  justify-center gap-2 cursor-pointer navItems z-10'>
 					<li>
-						<a
-							href='#link3'
-							className='bg-primary text-secondary'>
+						<Link
+							className='bg-primary text-secondary'
+							href='/'>
 							find a property
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
-							href='#link1'
-							className='bg-primary text-secondary'>
+						<Link
+							className='bg-primary text-secondary'
+							href='/services'>
 							services
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
-							href='#link2'
-							className='bg-primary text-secondary'>
+						<Link
+							className='bg-primary text-secondary'
+							href='/about'>
 							about us
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
-							href='#link3'
-							className='bg-primary text-secondary'>
+						<Link
+							className='bg-primary text-secondary'
+							href='/projects'>
 							projects
-						</a>
+						</Link>
 					</li>
 				</ul>
 			)}
