@@ -37,7 +37,7 @@ export default function Nav() {
 
 				<ul className='hidden md:flex items-center justify-center gap-2 cursor-pointer'>
 					<li>
-						<Link href='#'>find a property</Link>
+						<Link href='/findProperty'>find a property</Link>
 						{/* <a href='#link3'></a> */}
 					</li>
 					<li>

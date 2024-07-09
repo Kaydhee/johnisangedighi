@@ -55,9 +55,15 @@ const propertySlice = createSlice({
 		toggleModal: (state) => {
 			state.isModalOpen = !state.isModalOpen;
 		},
+		filterProperties: (state, action) => {
+			state.filteredProperties = state.properties.filter((property) =>
+				property.address.toLowerCase().includes(action.payload.toLowerCase())
+			);
+		},
 	},
 });
 
-export const { setSelectedProperty, toggleModal } = propertySlice.actions;
+export const { setSelectedProperty, toggleModal, filterProperties } =
+	propertySlice.actions;
 
 export default propertySlice.reducer;

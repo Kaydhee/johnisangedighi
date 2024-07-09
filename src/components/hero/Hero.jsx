@@ -1,3 +1,4 @@
+import Search from '../search/Search';
 import './hero.css';
 
 export default function Hero() {
@@ -9,6 +10,7 @@ export default function Hero() {
 				</h1>
 
 				<div>
+					<Search />
 					<button>Any status</button>
 					<button>For Let/Lease</button>
 					<button>For sale</button>
