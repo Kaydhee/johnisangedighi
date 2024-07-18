@@ -11,8 +11,9 @@ module.exports = {
 			blue: '#0000ff',
 			// primary: '#001e3c',
 			primary: '#003162',
-			primaryVariant: '#003162',
+			variantColor: '#00264d',
 			secondary: '#007fff',
+			placeholderColor: '#00509f',
 
 			green: '#00ff00',
 			white: '#fff',

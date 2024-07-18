@@ -9,7 +9,7 @@ export default function page() {
 		<section className='w-full h-full bg-primary'>
 			<section className=' w-[90%] pt-[25%] sm:pt-[15%] md:pt-[6%] service mx-auto text-white'>
 				<div className=''>
-					<h1>Discover Your DREAM home</h1>
+					<h3 className='mb-4'>Property search filter</h3>
 					<Search />
 				</div>
 			</section>

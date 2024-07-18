@@ -17,6 +17,8 @@ const initialState = {
 			bath: 4,
 			garage: 3,
 			price: 'N8,000,000',
+			purpose: 'residential',
+			status: 'for sale',
 		},
 		{
 			id: 2,
@@ -28,6 +30,8 @@ const initialState = {
 			bath: 4,
 			garage: 3,
 			price: 'N10,000,000',
+			purpose: 'commercial',
+			status: 'for lease',
 		},
 		{
 			id: 3,
@@ -39,10 +43,13 @@ const initialState = {
 			bath: 4,
 			garage: 3,
 			price: 'N150,000,000',
+			purpose: 'residential',
+			status: 'for letting',
 		},
 	],
 	selectedProperty: null,
 	isModalOpen: false,
+	filteredProperties: [],
 };
 
 const propertySlice = createSlice({
@@ -60,10 +67,37 @@ const propertySlice = createSlice({
 				property.address.toLowerCase().includes(action.payload.toLowerCase())
 			);
 		},
+		filterByPurpose: (state, action) => {
+			state.filteredProperties = state.properties.filter(
+				(property) => property.purpose === action.payload
+			);
+		},
+		filterByStatus: (state, action) => {
+			state.filteredProperties = state.properties.filter(
+				(property) => property.status === action.payload
+			);
+		},
+		filterByTitle: (state, action) => {
+			state.filteredProperties = state.properties.filter((property) =>
+				property.name.toLowerCase().includes(action.payload.toLowerCase())
+			);
+		},
+		filterByRooms: (state, action) => {
+			state.filteredProperties = state.properties.filter(
+				(property) => property.rooms === action.payload
+			);
+		},
 	},
 });
 
-export const { setSelectedProperty, toggleModal, filterProperties } =
-	propertySlice.actions;
+export const {
+	setSelectedProperty,
+	toggleModal,
+	filterProperties,
+	filterByPurpose,
+	filterByStatus,
+	filterByTitle,
+	filterByRooms,
+} = propertySlice.actions;
 
 export default propertySlice.reducer;

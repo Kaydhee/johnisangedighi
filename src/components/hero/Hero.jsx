@@ -1,4 +1,4 @@
-import Search from '../search/Search';
+// import Search from '../search/Search';
 import './hero.css';
 
 export default function Hero() {
@@ -8,13 +8,10 @@ export default function Hero() {
 				<h1 className='text-2xl sm:text-3xl md:text-5xl font-bold mb-4'>
 					Find your desired property
 				</h1>
-
+				{/* 
 				<div>
 					<Search />
-					<button>Any status</button>
-					<button>For Let/Lease</button>
-					<button>For sale</button>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

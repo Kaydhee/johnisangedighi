@@ -35,22 +35,38 @@ export default function Nav() {
 					<h1>Jia</h1>
 				</div>
 
-				<ul className='hidden md:flex items-center justify-center gap-2 cursor-pointer'>
+				<ul className='hidden md:flex items-center justify-center gap-2 cursor-pointer '>
 					<li>
-						<Link href='/findProperty'>find a property</Link>
+						<Link
+							href='/findProperty'
+							className='text-white'>
+							find a property
+						</Link>
 						{/* <a href='#link3'></a> */}
 					</li>
 					<li>
-						<Link href='/services'>services</Link>
+						<Link
+							href='/services'
+							className='text-white'>
+							services
+						</Link>
 						{/* <a href='#link1'></a> */}
 					</li>
 					<li>
-						<Link href='/about'>about us</Link>
+						<Link
+							href='/about'
+							className='text-white'>
+							about us
+						</Link>
 
 						{/* <a href='#link2'></a> */}
 					</li>
 					<li>
-						<Link href='/projects'>projects</Link>
+						<Link
+							href='/projects'
+							className='text-white'>
+							projects
+						</Link>
 
 						{/* <a href='#link3'></a> */}
 					</li>
