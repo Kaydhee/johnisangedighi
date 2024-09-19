@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
 	return (
-		<footer className='bg-primary text-white w-full'>
+		<footer className='bg-black text-white w-full'>
 			<section className='flex flex-col md:flex-row items-start justify-center gap-4 w-[90%] mx-auto py-8 '>
 				<div className=' '>
 					<h3>Jia</h3>

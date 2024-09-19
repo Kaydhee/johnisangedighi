@@ -10,8 +10,8 @@ import Link from 'next/link';
 
 export default function WhatWeDo() {
 	return (
-		<section className='w-[90%] mx-auto'>
-			<section className='flex flex-col md:flex-row items-center justify-center mt-[2%]'>
+		<section className='w-[90%] mx-auto '>
+			<section className='flex flex-col md:flex-row items-center justify-center mt-[2%] pb-8'>
 				<div className=' basis-2/4 flex items-center justify-center '>
 					<div className='w-full  md:w-1/2 h-[30rem] rounded-xl relative'>
 						<Image
@@ -28,7 +28,7 @@ export default function WhatWeDo() {
 							}}
 						/>
 
-						<button className='bg-secondary p-4 sm:p-6 rounded-full bottom-[-1rem] right-[-1rem] sm:bottom-[-1.5rem] sm:right-[-2rem] absolute text-2xl text-white z-10'>
+						<button className='bg-secondary p-4 sm:p-6 rounded-full bottom-[-1rem] right-[-1rem] sm:bottom-[-1.5rem] sm:right-[-2rem] absolute text-2xl text-black z-10'>
 							<Link href='/about'>
 								<FaArrowRightLong />
 							</Link>
