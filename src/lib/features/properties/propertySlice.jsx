@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import house1 from '../../../assets/house1.webp';
-import house2 from '../../../assets/house2.webp';
-import house3 from '../../../assets/house3.webp';
+import house1 from '../../../assets/house1.png';
+import house2 from '../../../assets/house2.png';
+import house3 from '../../../assets/house3.png';
 // import house4 from '../../../assets/house4.jpg';
 // import house5 from '../../../assets/house5.jpg';
 

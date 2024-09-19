@@ -1,15 +1,20 @@
-.hero-section {
-	background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-		url(../../assets/background.jpg);
-	background-position: center;
-	background-size: cover;
-	position: relative;
-}
-
-.text-box {
+/* .text-box {
 	width: 80%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+} */
+
+@media (max-width: 524px) {
+	.hero-section {
+		background: linear-gradient(
+				rgba(226, 244, 254, 0.3),
+				rgba(226, 244, 254, 0.3)
+			),
+			url(../../assets/heroImage.png);
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
 }

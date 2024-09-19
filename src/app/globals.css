@@ -163,3 +163,11 @@ li a {
 		z-index: 50;
 	}
 }
+
+.icon-blue {
+	color: #2227a5;
+}
+
+.linear {
+	background: linear-gradient(to bottom, #ffffff 50%, #0b0b0b 50%);
+}

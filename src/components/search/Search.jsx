@@ -111,7 +111,7 @@ export default function Search() {
 				</select>
 			</section>
 
-			<section className='basis-[70%]'>
+			<article className='basis-[70%]'>
 				<ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  w-[90%]  mx-auto '>
 					{properties.map((property) => (
 						<li
@@ -137,7 +137,7 @@ export default function Search() {
 						</li>
 					))}
 				</ul>
-			</section>
+			</article>
 		</main>
 	);
 }

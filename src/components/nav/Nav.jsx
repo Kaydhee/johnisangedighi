@@ -20,9 +20,8 @@ export default function Nav() {
 	// const pathname = usePathname();
 
 	return (
-		<nav className='mx-auto  fixed mt-8 z-50 w-full nav '>
-			{/* <div className='mx-auto w-[90%] backdrop-blur-md bg-white/70 shadow-md rounded-full flex items-center justify-between px-3'> */}
-			<div className='mx-auto w-[90%] bg-primary shadow rounded-2xl flex items-center justify-between px-3'>
+		<nav className='mx-auto w-full '>
+			<div className='mx-auto w-[90%]  flex items-center justify-between px-3'>
 				<div className='w-[10rem] py-3'>
 					{/* <Image
 						src={logo}
@@ -39,7 +38,7 @@ export default function Nav() {
 					<li>
 						<Link
 							href='/findProperty'
-							className='text-white'>
+							className='text-black'>
 							find a property
 						</Link>
 						{/* <a href='#link3'></a> */}
@@ -47,7 +46,7 @@ export default function Nav() {
 					<li>
 						<Link
 							href='/services'
-							className='text-white'>
+							className='text-black'>
 							services
 						</Link>
 						{/* <a href='#link1'></a> */}
@@ -55,7 +54,7 @@ export default function Nav() {
 					<li>
 						<Link
 							href='/about'
-							className='text-white'>
+							className='text-black'>
 							about us
 						</Link>
 
@@ -64,7 +63,7 @@ export default function Nav() {
 					<li>
 						<Link
 							href='/projects'
-							className='text-white'>
+							className='text-black'>
 							projects
 						</Link>
 
@@ -76,9 +75,9 @@ export default function Nav() {
 					className='md:hidden'
 					onClick={handleShowMenu}>
 					{isExpanded ? (
-						<MdOutlineClose className='text-secondary text-2xl' />
+						<MdOutlineClose className='text-black text-2xl' />
 					) : (
-						<MdMenu className='text-secondary text-2xl' />
+						<MdMenu className='text-black text-2xl' />
 					)}
 				</button>
 			</div>
@@ -87,28 +86,28 @@ export default function Nav() {
 				<ul className='flex flex-col items-center  justify-center gap-2 cursor-pointer navItems z-10'>
 					<li>
 						<Link
-							className='bg-primary text-secondary'
+							className='bg-primary text-black'
 							href='/'>
 							find a property
 						</Link>
 					</li>
 					<li>
 						<Link
-							className='bg-primary text-secondary'
+							className='bg-primary text-black'
 							href='/services'>
 							services
 						</Link>
 					</li>
 					<li>
 						<Link
-							className='bg-primary text-secondary'
+							className='bg-primary text-black'
 							href='/about'>
 							about us
 						</Link>
 					</li>
 					<li>
 						<Link
-							className='bg-primary text-secondary'
+							className='bg-primary text-black'
 							href='/projects'>
 							projects
 						</Link>
