@@ -41,7 +41,6 @@ export default function Nav() {
 							className='text-black'>
 							find a property
 						</Link>
-						{/* <a href='#link3'></a> */}
 					</li>
 					<li>
 						<Link
@@ -49,7 +48,6 @@ export default function Nav() {
 							className='text-black'>
 							services
 						</Link>
-						{/* <a href='#link1'></a> */}
 					</li>
 					<li>
 						<Link
@@ -57,8 +55,6 @@ export default function Nav() {
 							className='text-black'>
 							about us
 						</Link>
-
-						{/* <a href='#link2'></a> */}
 					</li>
 					<li>
 						<Link
@@ -66,8 +62,6 @@ export default function Nav() {
 							className='text-black'>
 							projects
 						</Link>
-
-						{/* <a href='#link3'></a> */}
 					</li>
 				</ul>
 
@@ -75,7 +69,7 @@ export default function Nav() {
 					className='md:hidden'
 					onClick={handleShowMenu}>
 					{isExpanded ? (
-						<MdOutlineClose className='text-black text-2xl' />
+						<MdOutlineClose className='text-black text-2xl z-10' />
 					) : (
 						<MdMenu className='text-black text-2xl' />
 					)}
@@ -83,36 +77,40 @@ export default function Nav() {
 			</div>
 
 			{showMenu && (
-				<ul className='flex flex-col items-center  justify-center gap-2 cursor-pointer navItems z-10'>
-					<li>
-						<Link
-							className='bg-primary text-black'
-							href='/'>
-							find a property
-						</Link>
-					</li>
-					<li>
-						<Link
-							className='bg-primary text-black'
-							href='/services'>
-							services
-						</Link>
-					</li>
-					<li>
-						<Link
-							className='bg-primary text-black'
-							href='/about'>
-							about us
-						</Link>
-					</li>
-					<li>
-						<Link
-							className='bg-primary text-black'
-							href='/projects'>
-							projects
-						</Link>
-					</li>
-				</ul>
+				<div
+					className='fixed inset-0 bg-black bg-opacity-50 z-10'
+					onClick={handleShowMenu}>
+					<ul className='flex flex-col items-center  justify-center gap-2 cursor-pointer navItems w-[80%]  z-50'>
+						<li>
+							<Link
+								className='bg-black text-white'
+								href='/findProperty'>
+								find a property
+							</Link>
+						</li>
+						<li>
+							<Link
+								className='bg-black text-white'
+								href='/services'>
+								services
+							</Link>
+						</li>
+						<li>
+							<Link
+								className='bg-black text-white'
+								href='/about'>
+								about us
+							</Link>
+						</li>
+						<li>
+							<Link
+								className='bg-black text-white'
+								href='/projects'>
+								projects
+							</Link>
+						</li>
+					</ul>
+				</div>
 			)}
 		</nav>
 	);
