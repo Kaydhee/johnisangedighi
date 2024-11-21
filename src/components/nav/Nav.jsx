@@ -35,28 +35,28 @@ export default function Nav() {
 				</div>
 
 				<ul className='hidden md:flex items-center justify-center gap-2 cursor-pointer '>
-					<li>
+					<li className=' hover:font-bold '>
 						<Link
 							href='/findProperty'
 							className='text-black'>
 							find a property
 						</Link>
 					</li>
-					<li>
+					<li className=' hover:font-bold '>
 						<Link
 							href='/services'
 							className='text-black'>
 							services
 						</Link>
 					</li>
-					<li>
+					<li className=' hover:font-bold '>
 						<Link
 							href='/about'
 							className='text-black'>
 							about us
 						</Link>
 					</li>
-					<li>
+					<li className=' hover:font-bold '>
 						<Link
 							href='/projects'
 							className='text-black'>

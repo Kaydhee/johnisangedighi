@@ -1,3 +1,4 @@
+import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
 import PropertyList from '../components/properties/PropertyList';
 import PropertyModal from '../components/properties/PropertyModal';
@@ -12,6 +13,7 @@ export default function Home() {
 			<PropertyModal />
 			<Slider />
 			<WhatWeDo />
+			<Footer />
 		</main>
 	);
 }

@@ -51,7 +51,7 @@ export default function Search() {
 	};
 
 	return (
-		<main className='flex flex-col md:flex-row items-center justify-start gap-4 md:gap-0 h-full'>
+		<main className='flex flex-col md:flex-row items-center justify-start gap-4 md:gap-0 h-full pb-[10%]'>
 			<section className='flex flex-col items-start justify-between gap-4  md:basis-[30%]'>
 				<input
 					type='text'
@@ -82,47 +82,47 @@ export default function Search() {
 					<option value='6'>6+ Rooms</option>
 				</select>
 
-				<div className='flex items-start justify-start flex-wrap gap-2 sm:w-1/2'>
+				<div className='flex  items-start justify-start flex-wrap gap-2 '>
 					<button
 						onClick={() => handlePurposeFilter('residential')}
-						className='flex items-center justify-center bg-black text-white text-base cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
+						className='flex items-center justify-center bg-black text-white text-sm cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
 						Residential
 					</button>
 
 					<button
 						onClick={() => handlePurposeFilter('commercial')}
-						className='flex items-center justify-center bg-black text-white text-base cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
+						className='flex items-center justify-center bg-black text-white text-sm cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
 						Commercial
 					</button>
 
 					<button
 						onClick={() => handleStatusFilter('for letting')}
-						className='flex items-center justify-center bg-black text-white text-base cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
+						className='flex items-center justify-center bg-black text-white text-sm cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
 						For Letting
 					</button>
 
 					<button
 						onClick={() => handleStatusFilter('for lease')}
-						className='flex items-center justify-center bg-black text-white text-base cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
+						className='flex items-center justify-center bg-black text-white text-sm cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
 						For Lease
 					</button>
 
 					<button
 						onClick={() => handleStatusFilter('for sale')}
-						className='flex items-center justify-center bg-black text-white text-base cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
+						className='flex items-center justify-center bg-black text-white text-sm cursor-pointer py-1 sm:py-2 px-2 sm:px-4 '>
 						For Sale
 					</button>
 				</div>
 			</section>
 
-			<article className='basis-[70%]'>
-				<ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  w-full  mx-auto '>
+			<article className='md:basis-[70%]'>
+				<ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full mx-auto'>
 					{properties.map((property) => (
 						<li
 							key={property.id}
 							className='p-4  rounded shadow cursor-pointer bg-white'
 							onClick={() => handlePropertySelect(property)}>
-							<div className='flex flex-col'>
+							<div className='flex flex-col '>
 								<div className='w-full h-[10rem] sm:h-[15rem]  mb-4 '>
 									<Image
 										src={property.image}

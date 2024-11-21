@@ -5,13 +5,13 @@ import Article from './Article';
 export default function SubServices() {
 	return (
 		<section className='w-full'>
-			<section className=''>
-				<section className=' flex items-center justify-between w-full gap-4 flex-wrap sm:flex-nowrap'>
+			<section className='mb-[2%]'>
+				<section className=' flex items-center justify-between w-full gap-4 flex-wrap sm:flex-nowrap '>
 					<div className='flex flex-col gap-4'>
 						<Article>
 							<h4 className='text-secondary font-bold'>MORTGAGE VALUATION</h4>
 
-							<p className='text-sm'>
+							<p className='text-sm text-secondary'>
 								mortgage is created where one party known as the mortgagor
 								grants an interest in his property to another party known as the
 								mortgagee as a security for loan facility. Due to the peculiar
@@ -28,7 +28,7 @@ export default function SubServices() {
 						<Article>
 							<h4 className='text-secondary font-bold'>PRIVATIZATION</h4>
 
-							<p className='text-sm'>
+							<p className='text-sm text-secondary'>
 								This concept cameto the fore when there was widespread need for
 								Governments and public Sector Organizations to divert from
 								business concerns which the private sector was best equipped to
@@ -45,7 +45,7 @@ export default function SubServices() {
 						<Article>
 							<h4 className='text-secondary font-bold'>GOING CONCERN</h4>
 
-							<p className='text-sm'>
+							<p className='text-sm text-secondary'>
 								This is obtainable where there is need to ascertain the value of
 								a business which is in operation. Under this situation the asset
 								profile is likely to include land and buildings, plant and
@@ -66,7 +66,7 @@ export default function SubServices() {
 									TENEMENT RATING AND COLLECTION
 								</h4>
 
-								<p className='text-xs sm:text-sm '>
+								<p className='text-xs sm:text-sm text-secondary'>
 									Although the valuation of properties for tenement rating and
 									preparation of valuation list is governed by legislation,
 									requsite skills and experience are still required when
@@ -79,7 +79,7 @@ export default function SubServices() {
 									OIL SPILLAGE AND INJURIOUS AFFECTION
 								</h4>
 
-								<p className='text-xs sm:text-sm'>
+								<p className='text-xs sm:text-sm text-secondary'>
 									Although the Land Use Act of 1978 prescribes the method of
 									valuation to be used when valuing for compensation, aspects
 									such as oil spillage and injurious affection are not
@@ -95,7 +95,7 @@ export default function SubServices() {
 					<Article>
 						<h4 className='text-secondary font-bold'>SALES AND PURCHASES</h4>
 
-						<p>
+						<p className='text-secondary'>
 							it's advisable to esthablish the value of a property to be
 							purchased or sold depending on the client's instructions. We are
 							fully versed with market indices and are in the position to advice
@@ -110,7 +110,7 @@ export default function SubServices() {
 								COMPULSORY ACQUISITION AND COMPENSATION
 							</h4>
 
-							<p>
+							<p className='text-secondary'>
 								This type of valuation is otherwise known as a statutory
 								valuation as the basis of valuation is governed by legislation.
 								The legislation under reference is the Land Use Act of 1978.
@@ -121,7 +121,7 @@ export default function SubServices() {
 						<Article>
 							<h4 className='text-secondary font-bold'>PLANT AND MACHINERY</h4>
 
-							<p>
+							<p className='text-secondary'>
 								We also undertake the valuation of Plant and Machinery as well
 								as Equipment used in manufacturing process or other purposes.
 								Typically, such value would reflect the age, condition and level
@@ -133,7 +133,7 @@ export default function SubServices() {
 								MERGER AND ACQUISITIONS AND TAKEOVERS
 							</h4>
 
-							<p>
+							<p className='text-secondary'>
 								This type of valuation is undertaken where there is need to
 								esthablish the worth of two companies that agree to merge and
 								integrate their operations to achieve higher turnover on assets,
@@ -147,7 +147,7 @@ export default function SubServices() {
 						<Article>
 							<h4 className='text-secondary font-bold'>INSURANCE</h4>
 
-							<p>
+							<p className='text-secondary'>
 								Valuation of an asset or property for insurance is required when
 								a property/asset is to be insured. This is principally to avoid
 								under-insurance and ensure that the sum insured represents the
