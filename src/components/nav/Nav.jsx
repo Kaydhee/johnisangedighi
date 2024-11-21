@@ -1,11 +1,10 @@
 'use client';
 import Link from 'next/link';
 // import { usePathname } from 'next/navigation';
-// import Image from 'next/image';
-// import logo from '../../assets/logo.svg';
 
 import { useState } from 'react';
 import { MdMenu, MdOutlineClose } from 'react-icons/md';
+import Logo from '../logo/Logo';
 
 export default function Nav() {
 	const [showMenu, setShowMenu] = useState(false);
@@ -22,17 +21,7 @@ export default function Nav() {
 	return (
 		<nav className='mx-auto w-full '>
 			<div className='mx-auto w-[90%]  flex items-center justify-between px-3'>
-				<div className='w-[10rem] py-3'>
-					{/* <Image
-						src={logo}
-						alt='company logo'
-						width={0}
-						height={0}
-						sizes='100%'
-						style={{ width: '100%', height: 'auto' }}
-					/> */}
-					<h1>Jia</h1>
-				</div>
+				<Logo />
 
 				<ul className='hidden md:flex items-center justify-center gap-2 cursor-pointer '>
 					<li className=' hover:font-bold '>

@@ -6,13 +6,14 @@ import {
 	FaInstagramSquare,
 	FaTwitterSquare,
 } from 'react-icons/fa';
+import Logo from '../logo/Logo';
 
 export default function Footer() {
 	return (
 		<footer className='bg-black text-white w-full'>
 			<section className='flex flex-col md:flex-row items-start justify-center gap-4 w-[90%] mx-auto py-8 '>
 				<div className=' '>
-					<h3>Jia</h3>
+					<Logo />
 
 					{/* <div className='flex  items-center justify-between gap-2 w-full md:w-1/2  mt-3 font-bold'> */}
 
