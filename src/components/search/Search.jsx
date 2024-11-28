@@ -116,14 +116,14 @@ export default function Search() {
 			</section>
 
 			<article className='md:basis-[70%]'>
-				<ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full mx-auto'>
+				<ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full h-full mx-auto'>
 					{properties.map((property) => (
 						<li
 							key={property.id}
 							className='p-4  rounded shadow cursor-pointer bg-white'
 							onClick={() => handlePropertySelect(property)}>
 							<div className='flex flex-col '>
-								<div className='w-full h-[10rem] sm:h-[15rem]  mb-4 '>
+								<div className='w-full h-[10rem] sm:h-[10rem]  mb-4 '>
 									<Image
 										src={property.image}
 										alt='property image'

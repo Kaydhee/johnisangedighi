@@ -12,7 +12,7 @@ export default function page() {
 	return (
 		<section className='w-full flex flex-col justify-between h-dvh bg-secondary'>
 			<Nav />
-			<section className=' w-[90%] pt-4 service mx-auto text-black '>
+			<section className=' w-[90%] pt-4 h-full service mx-auto text-black '>
 				<div className=''>
 					<h3 className='mb-2 flex items-center gap-2'>
 						<FaSearchLocation /> <span>Property search filter</span>
