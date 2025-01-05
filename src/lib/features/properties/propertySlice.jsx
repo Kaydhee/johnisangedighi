@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 import hq from '../../../assets/hq.jpg';
 import brooks from '../../../assets/brooks.jpg';
-import osongama from '../../../assets/osongama.jpg';
 import mbiabong from '../../../assets/mbiabong.jpg';
-import lanes from '../../../assets/2lanes.jpg';
+// import lanes from '../../../assets/2lanes.jpg';
+// import osongama from '../../../assets/osongama.jpg';
 // import house4 from '../../../assets/house4.jpg';
 // import house5 from '../../../assets/house5.jpg';
 
@@ -48,32 +48,32 @@ const initialState = {
 			purpose: 'any (residential)',
 			status: 'for letting',
 		},
-		{
-			id: 4,
-			name: '1 bedroon apartment',
-			address: '5 Paul Ekpo crescent',
-			location: 'Osongama Estate',
-			rooms: 1,
-			image: osongama,
-			bath: 1,
-			garage: 2,
-			price: 'N1,500,000',
-			purpose: 'residential',
-			status: 'for letting',
-		},
-		{
-			id: 5,
-			name: 'Office space',
-			address: '5 Paul Ekpo crescent',
-			location: 'Nsikak Eduok Ave.',
-			rooms: 5,
-			image: lanes,
-			bath: 1,
-			garage: 7,
-			price: 'Contact for price',
-			purpose: 'commercial',
-			status: 'for letting',
-		},
+		// {
+		// 	id: 4,
+		// 	name: '1 bedroon apartment',
+		// 	address: '5 Paul Ekpo crescent',
+		// 	location: 'Osongama Estate',
+		// 	rooms: 1,
+		// 	image: osongama,
+		// 	bath: 1,
+		// 	garage: 2,
+		// 	price: 'N1,500,000',
+		// 	purpose: 'residential',
+		// 	status: 'for letting',
+		// },
+		// {
+		// 	id: 5,
+		// 	name: 'Office space',
+		// 	address: '5 Paul Ekpo crescent',
+		// 	location: 'Nsikak Eduok Ave.',
+		// 	rooms: 5,
+		// 	image: lanes,
+		// 	bath: 1,
+		// 	garage: 7,
+		// 	price: 'Contact for price',
+		// 	purpose: 'commercial',
+		// 	status: 'for letting',
+		// },
 	],
 	selectedProperty: null,
 	isModalOpen: false,
