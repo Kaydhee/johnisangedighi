@@ -51,7 +51,7 @@ export default function WhatWeDo() {
 					</p>
 
 					<div className='flex items-center gap-2 mb-4 text-xl  sm:text-2xl font-medium '>
-						<Ri24HoursFill /> <p>Find your next home in 24hours</p>
+						<Ri24HoursFill /> <p>Find your next property in 24hours</p>
 					</div>
 					<div className='flex items-center gap-2 mb-4 text-xl  sm:text-2xl font-medium'>
 						<IoIosDocument /> <p>Rental agreements</p>

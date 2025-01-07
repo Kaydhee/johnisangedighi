@@ -19,7 +19,7 @@ export default function Nav() {
 	// const pathname = usePathname();
 
 	return (
-		<nav className='mx-auto w-full '>
+		<nav className='mx-auto w-full bg-white '>
 			<div className='mx-auto w-[90%]  flex items-center justify-between px-3'>
 				<Logo />
 

@@ -34,7 +34,22 @@ module.exports = {
 
 			md: '960px',
 		},
-		extend: {},
+		extend: {
+			keyframes: {
+				slideUp: {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				slideInRight: {
+					'0%': { opacity: '0', transform: 'translateX(20px)' },
+					'100%': { opacity: '1', transform: 'translateX(0)' },
+				},
+			},
+			animation: {
+				slideUp: 'slideUp 1s ease-out',
+				slideInRight: 'slideInRight 1s ease-out',
+			},
+		},
 	},
 	plugins: [],
 };
