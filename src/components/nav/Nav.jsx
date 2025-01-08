@@ -9,6 +9,7 @@ import Logo from '../logo/Logo';
 export default function Nav() {
 	const [showMenu, setShowMenu] = useState(false);
 	const [isExpanded, setIsExpanded] = useState(false);
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
 	// function that handles the navbar toggles.
 	function handleShowMenu() {
@@ -38,13 +39,39 @@ export default function Nav() {
 							services
 						</Link>
 					</li>
-					<li className=' hover:font-bold '>
+					{/* <li className=' hover:font-bold '>
 						<Link
 							href='/about'
 							className='text-black'>
 							about us
 						</Link>
+					</li> */}
+
+					<li className='hover:font-bold relative group'>
+						<Link
+							href=''
+							className='text-black'>
+							About Us
+						</Link>
+
+						<ul className='absolute left-0 top-full bg-white shadow-md rounded-md border mt-0 group-hover:block hidden z-10'>
+							<li>
+								<Link
+									href='/about'
+									className='block px-4 py-2 hover:bg-gray-200'>
+									About Us
+								</Link>
+							</li>
+							<li>
+								<Link
+									href='/our-principal'
+									className='block px-4 py-2 hover:bg-gray-200'>
+									Our Principal
+								</Link>
+							</li>
+						</ul>
 					</li>
+
 					<li className=' hover:font-bold '>
 						<Link
 							href='/projects'
