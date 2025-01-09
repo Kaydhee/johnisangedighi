@@ -1,4 +1,5 @@
 import Carousel from '../../components/carousel/Carousel';
+import Footer from '../../components/footer/Footer';
 import MoreInfo from '../../components/moreInfo/MoreInfo';
 import Nav from '../../components/nav/Nav';
 import WhyChooseUs from '../../components/whyChooseUs/WhyChooseUs';
@@ -10,6 +11,7 @@ export default function About() {
 			<Carousel />
 			<MoreInfo />
 			<WhyChooseUs />
+			<Footer />
 		</section>
 	);
 }
