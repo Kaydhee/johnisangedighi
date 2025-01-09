@@ -39,13 +39,6 @@ export default function Nav() {
 							services
 						</Link>
 					</li>
-					{/* <li className=' hover:font-bold '>
-						<Link
-							href='/about'
-							className='text-black'>
-							about us
-						</Link>
-					</li> */}
 
 					<li className='hover:font-bold relative group'>
 						<Link
@@ -53,19 +46,19 @@ export default function Nav() {
 							className='text-black'>
 							About Us
 						</Link>
-
-						<ul className='absolute left-0 top-full bg-white shadow-md rounded-md border mt-0 group-hover:block hidden z-10'>
+						{/* dropdown */}
+						<ul className='absolute w-[10rem] left-0 top-full bg-white shadow-md rounded-md mt-0 group-hover:block hidden z-10'>
 							<li>
 								<Link
 									href='/about'
-									className='block px-4 py-2 hover:bg-gray-200'>
+									className='block px-4 py-2 hover:bg-gray-200 text-black'>
 									About Us
 								</Link>
 							</li>
 							<li>
 								<Link
-									href='/our-principal'
-									className='block px-4 py-2 hover:bg-gray-200'>
+									href='/ourPrincipal'
+									className='block px-4 py-2 hover:bg-gray-200 text-black'>
 									Our Principal
 								</Link>
 							</li>
@@ -116,6 +109,13 @@ export default function Nav() {
 								className='bg-black text-white'
 								href='/about'>
 								about us
+							</Link>
+						</li>
+						<li>
+							<Link
+								href='/ourPrincipal'
+								className='bg-black text-white'>
+								Our Principal
 							</Link>
 						</li>
 						<li>

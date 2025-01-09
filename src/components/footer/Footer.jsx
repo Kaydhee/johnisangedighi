@@ -7,6 +7,7 @@ import {
 	FaTwitterSquare,
 } from 'react-icons/fa';
 import Logo from '../logo/Logo';
+import Link from 'next/link';
 
 export default function Footer() {
 	return (
@@ -25,19 +26,36 @@ export default function Footer() {
 				<section className='flex flex-col items-start md:items-center justify-center w-full '>
 					<h4 className='font-bold text-white mb-2'>Quick Links</h4>
 					<ul className='flex flex-col items-start justify-center text-white text-sm cursor-pointer gap-2 '>
-						<li className='hover:font-bold flex items-center justify-between gap-2'>
-							{' '}
-							<MdArrowForwardIos /> About us
+						<li className='hover:font-bold '>
+							<Link
+								href='/about'
+								className='flex items-center justify-between gap-2 text-white'>
+								<MdArrowForwardIos /> About us
+							</Link>
 						</li>
-						<li className='hover:font-bold flex items-center justify-between gap-2'>
-							{' '}
-							<MdArrowForwardIos /> Contact us
+
+						<li className='hover:font-bold '>
+							<Link
+								href='/'
+								className='flex items-center justify-between gap-2 text-white'>
+								<MdArrowForwardIos /> Contact us
+							</Link>
 						</li>
-						<li className='hover:font-bold flex items-center justify-between gap-2'>
-							<MdArrowForwardIos /> Projects
+
+						<li className='hover:font-bold '>
+							<Link
+								href='/projects'
+								className='flex items-center justify-between gap-2 text-white'>
+								<MdArrowForwardIos /> Projects
+							</Link>
 						</li>
-						<li className='hover:font-bold flex items-center justify-between gap-2'>
-							<MdArrowForwardIos /> Find a property
+
+						<li className='hover:font-bold '>
+							<Link
+								href='/findProperty'
+								className='flex items-center justify-between gap-2 text-white'>
+								<MdArrowForwardIos /> Find a property
+							</Link>
 						</li>
 					</ul>
 				</section>
