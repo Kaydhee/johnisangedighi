@@ -1,16 +1,22 @@
+'use client';
+import { motion } from 'framer-motion';
+
 import Image from 'next/image';
-import React from 'react';
+import Link from 'next/link';
 
 import HQ from '../../assets/background.jpg';
 import { Ri24HoursFill } from 'react-icons/ri';
 import { IoIosDocument } from 'react-icons/io';
 import { MdVerifiedUser } from 'react-icons/md';
 import { FaNairaSign, FaArrowRightLong } from 'react-icons/fa6';
-import Link from 'next/link';
 
 export default function WhatWeDo() {
 	return (
-		<section className='w-[90%] mx-auto '>
+		<motion.section
+			initial={{ opacity: 0, x: -100 }}
+			whileInView={{ opacity: 1, x: 0 }}
+			transition={{ delay: 0.2, duration: 0.8 }}
+			className='w-[90%] mx-auto '>
 			<section className='flex flex-col md:flex-row items-center justify-center mt-[2%] pb-8'>
 				<div className=' basis-2/4 flex items-center justify-center '>
 					<div className='w-full  md:w-1/2 h-[30rem] rounded-xl relative'>
@@ -64,7 +70,7 @@ export default function WhatWeDo() {
 					</div>
 				</div>
 			</section>
-		</section>
+		</motion.section>
 	);
 }
 

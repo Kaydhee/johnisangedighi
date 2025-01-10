@@ -1,4 +1,5 @@
 'use client';
+import { motion } from 'framer-motion';
 
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -22,7 +23,11 @@ export default function PropertyList() {
 	};
 
 	return (
-		<section className='w-full mx-auto flex linear flex-col py-8 relative listing '>
+		<motion.section
+			initial={{ opacity: 0, x: -100 }}
+			whileInView={{ opacity: 1, x: 0 }}
+			transition={{ delay: 0.2, duration: 0.8 }}
+			className='w-full mx-auto flex linear flex-col py-8 relative listing overflow-hidden'>
 			<div className='w-[90%] mx-auto flex flex-col'>
 				<h2 className='flex items-center mb-4 gap-3 text-black'>
 					<CgArrowLongRightR /> <span>POPULAR</span>
@@ -91,6 +96,6 @@ export default function PropertyList() {
 					))}
 				</section>
 			</div>
-		</section>
+		</motion.section>
 	);
 }

@@ -7,7 +7,7 @@ import WhatWeDo from '../components/whatWeDo/WhatWeDo';
 
 export default function Home() {
 	return (
-		<main className='w-full h-full relative bg-black'>
+		<main className='w-full h-full relative bg-black overflow-hidden'>
 			<Hero />
 			<PropertyList />
 			<PropertyModal />
