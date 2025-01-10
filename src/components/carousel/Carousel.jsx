@@ -7,10 +7,9 @@ export default function Carousel() {
 	const images = [
 		'/images/old.webp',
 		'/images/old1.webp',
+		'/images/old2.jpg',
 		'/images/old3.webp',
-		'/images/old1.webp',
-		// '/images/old1.webp',
-		// '/images/old3.webp',
+		'/images/old4.jpg',
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(0);

@@ -18,13 +18,13 @@ export default function Hero() {
 		{
 			text: 'Secure your future with the right property today.',
 			description: 'Our professional services',
-			bgImage: '/images/old1.webp',
+			bgImage: '/images/construction.jpg',
 			textFade: 'fade-right',
 		},
 		{
-			text: "Find a place you'll love to call home.",
+			text: 'Commercial Marine Valuation',
 			description: 'Our professional services',
-			bgImage: '/images/old3.webp',
+			bgImage: '/images/rig.jpg',
 			textFade: 'fade-up',
 		},
 	];
