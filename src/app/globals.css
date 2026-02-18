@@ -5,169 +5,142 @@
 *,
 *:after,
 *:before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-/* .listing::before {
-	--line: color-mix(in lch, canvasText 25%, transparent);
-	--line: #0000ff;
-	--size: 40px;
-	content: '';
-	height: 100vh;
-	width: 100vw;
-	position: fixed;
-	background: linear-gradient(
-				90deg,
-				var(--line) 1px,
-				transparent 1px var(--size)
-			)
-			0 -5vmin / var(--size) var(--size),
-		linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin / var(
-				--size
-			) var(--size);
-	mask: linear-gradient(-15deg, transparent 60%, white);
-	top: 0;
-	z-index: -1;
-	opacity: 0.5;
-}
-
-.listing {
-	position: relative;
-} */
 
 ul {
-	display: flex;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	position: relative;
-	flex-wrap: wrap;
-	color: color-mix(in lch, canvasText 50%, canvas);
-	transition: color 0.2s;
-	touch-action: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  flex-wrap: wrap;
+  color: color-mix(in lch, canvasText 50%, canvas);
+  transition: color 0.2s;
+  touch-action: none;
 }
 
 li {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 li a {
-	display: inline-block;
-	padding: 0.5rem 1.25rem;
-	color: #0000ff;
-	text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  color: #0000ff;
+  text-decoration: none;
 }
 
 .shadow {
-	box-shadow: 0 0 1.5rem 0 rgba(11, 11, 11, 0.2);
+  box-shadow: 0 0 1.5rem 0 rgba(11, 11, 11, 0.2);
 }
 
 /* handling the navbar fade in */
 
 .nav {
-	animation: fade-in 1.5s linear forwards;
-	/* position: relative; */
+  animation: fade-in 1.5s linear forwards;
+  /* position: relative; */
 }
 
 .navItems {
-	position: absolute;
-	top: 10%;
-	right: 2rem;
-	flex-direction: column;
-	gap: 0;
-	align-items: flex-start;
-	/* display: none; */
-	perspective: 500px;
+  position: absolute;
+  top: 10%;
+  right: 2rem;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  /* display: none; */
+  perspective: 500px;
 }
 
 .navItems li {
-	width: 100%;
-	animation: navAnimation 1s ease forwards;
-	transform: rotateY(90deg) rotateX(90deg);
-	transform-origin: top right;
-	opacity: 0;
+  width: 100%;
+  animation: navAnimation 1s ease forwards;
+  transform: rotateY(90deg) rotateX(90deg);
+  transform-origin: top right;
+  opacity: 0;
 }
 
 .navItems li:nth-child(2) {
-	animation-delay: 300ms;
+  animation-delay: 300ms;
 }
 
 .navItems li:nth-child(3) {
-	animation-delay: 600ms;
+  animation-delay: 600ms;
 }
 
 .navItems li:nth-child(4) {
-	animation-delay: 900ms;
+  animation-delay: 900ms;
 }
 
 .navItems li a {
-	/* background: #fff; */
-	height: 3rem;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	padding: 0 3rem 0 2.5rem;
-	border-top: 1px solid #ffffff;
+  /* background: #fff; */
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem 0 2.5rem;
+  border-top: 1px solid #ffffff;
 }
 
 @keyframes navAnimation {
-	to {
-		transform: rotate(0);
-		opacity: 1;
-	}
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
 }
 
 .nav li:hover {
-	background-color: #007fff;
+  background-color: #007fff;
 
-	border-radius: 8px;
+  border-radius: 8px;
 }
 
 .nav li:hover a {
-	color: white;
-	transition: all 40ms ease;
+  color: white;
+  transition: all 40ms ease;
 }
 
 .service {
-	animation-delay: 400ms;
-	animation: slide-down 1.5s linear forwards;
+  animation-delay: 400ms;
+  animation: slide-down 1.5s linear forwards;
 }
 
 @keyframes slide-down {
-	0% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
 
-	0% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
-	0% {
-		margin-top: 0;
-		/* margin-left: -4rem; */
-		opacity: 0;
-	}
+  0% {
+    margin-top: 0;
+    /* margin-left: -4rem; */
+    opacity: 0;
+  }
 
-	50% {
-		margin-top: 1rem;
-		/* margin-left: -2rem; */
-		opacity: 0.5;
-	}
+  50% {
+    margin-top: 1rem;
+    /* margin-left: -2rem; */
+    opacity: 0.5;
+  }
 
-	100% {
-		margin-top: 2rem;
-		margin-left: 0rem;
-		opacity: 1;
-		z-index: 50;
-	}
+  100% {
+    margin-top: 2rem;
+    margin-left: 0rem;
+    opacity: 1;
+    z-index: 50;
+  }
 }
 
 .icon-blue {
-	color: #2227a5;
+  color: #2227a5;
 }
 
 .linear {
-	background: linear-gradient(to bottom, #ffffff 50%, #0b0b0b 50%);
+  background: linear-gradient(to bottom, #ffffff 50%, #0b0b0b 50%);
 }

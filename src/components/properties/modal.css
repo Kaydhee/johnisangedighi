@@ -1,0 +1,142 @@
+/* ============================= */
+/* MODAL BACKDROP */
+/* ============================= */
+
+.fixed.inset-0 {
+  backdrop-filter: blur(10px);
+  animation: modalFadeIn 0.4s ease forwards;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================= */
+/* MODAL CONTAINER */
+/* ============================= */
+
+.shadow-lg {
+  border-radius: 28px !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(25px);
+  box-shadow:
+    20px 20px 40px rgba(0, 0, 0, 0.25),
+    -20px -20px 40px rgba(255, 255, 255, 0.7);
+  animation: modalPop 0.5s ease forwards;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.4s ease;
+  padding: 2rem !important;
+}
+
+@keyframes modalPop {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ============================= */
+/* IMAGE STYLING */
+/* ============================= */
+
+.shadow-lg img {
+  border-radius: 18px !important;
+  box-shadow:
+    12px 12px 25px rgba(0, 0, 0, 0.15),
+    -12px -12px 25px rgba(255, 255, 255, 0.7);
+  transition: transform 0.6s ease;
+}
+
+.shadow-lg img:hover {
+  transform: scale(1.05);
+}
+
+/* ============================= */
+/* TEXT ENHANCEMENT */
+/* ============================= */
+
+.shadow-lg h2 {
+  font-size: 1.6rem;
+  color: #2d2c41;
+  letter-spacing: 0.5px;
+}
+
+.shadow-lg p {
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+.shadow-lg strong {
+  color: #6c5ce7;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* BUTTON STYLING */
+/* ============================= */
+
+.shadow-lg button {
+  border-radius: 50px;
+  padding: 10px 20px !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* Primary Button */
+.shadow-lg button.bg-black {
+  background: linear-gradient(145deg, #6c5ce7, #5a4bd6) !important;
+  border: none !important;
+  box-shadow:
+    8px 8px 18px rgba(0, 0, 0, 0.25),
+    -8px -8px 18px rgba(255, 255, 255, 0.5);
+}
+
+.shadow-lg button.bg-black:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    12px 12px 25px rgba(0, 0, 0, 0.3),
+    -12px -12px 25px rgba(255, 255, 255, 0.6);
+}
+
+/* Outline Button */
+.shadow-lg button.bg-transparent {
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #6c5ce7 !important;
+  color: #6c5ce7 !important;
+  box-shadow:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.05),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+
+.shadow-lg button.bg-transparent:hover {
+  background: #6c5ce7;
+  color: white !important;
+  transform: translateY(-4px);
+}
+
+/* Click effect */
+.shadow-lg button:active {
+  transform: scale(0.95);
+}
+
+/* ============================= */
+/* MOBILE REFINEMENT */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .shadow-lg {
+    max-width: 95% !important;
+    padding: 1.5rem !important;
+  }
+
+  .shadow-lg h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,177 @@
+/* ============================= */
+/* LISTING SECTION */
+/* ============================= */
+
+.listing {
+  /* background: linear-gradient(145deg, #eef1f6, #ffffff); */
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* subtle animated background glow */
+.listing::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(108, 92, 231, 0.12),
+    transparent 70%
+  );
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+  animation: pulseGlow 6s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* ============================= */
+/* SECTION HEADERS */
+/* ============================= */
+
+.listing h2 span {
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #6c5ce7;
+}
+
+.listing h3 {
+  color: #2d2c41;
+}
+
+/* Explore All hover animation */
+.listing h3:last-child {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.listing h3:last-child:hover {
+  transform: translateX(8px);
+  color: #6c5ce7;
+}
+
+/* ============================= */
+/* PROPERTY CARD */
+/* ============================= */
+
+.listing .cursor-pointer {
+  border-radius: 24px;
+  background: #f4f7fb;
+  box-shadow:
+    12px 12px 25px rgba(0, 0, 0, 0.12),
+    -12px -12px 25px rgba(255, 255, 255, 0.8);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover lift */
+.listing .cursor-pointer:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    18px 18px 35px rgba(0, 0, 0, 0.18),
+    -18px -18px 35px rgba(255, 255, 255, 0.9);
+}
+
+/* ============================= */
+/* IMAGE MAGIC */
+/* ============================= */
+
+.listing .cursor-pointer img {
+  border-radius: 18px;
+  transition: transform 0.6s ease;
+}
+
+.listing .cursor-pointer:hover img {
+  transform: scale(1.08);
+}
+
+/* ============================= */
+/* PROPERTY DETAILS */
+/* ============================= */
+
+.listing .items-start {
+  padding-top: 0.5rem;
+}
+
+.listing h2 {
+  font-size: 1.1rem;
+}
+
+.listing p {
+  font-weight: 500;
+}
+
+/* ============================= */
+/* PRICE STYLE */
+/* ============================= */
+
+.listing p.font-bold {
+  color: #6c5ce7;
+  font-size: 1.1rem;
+}
+
+/* ============================= */
+/* FEATURE BAR (Rooms / Garage / Bath) */
+/* ============================= */
+
+.bg-ultramarine {
+  background: linear-gradient(145deg, #e8ecf4, #ffffff);
+  border-radius: 18px;
+  box-shadow:
+    inset 6px 6px 12px rgba(0, 0, 0, 0.05),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+/* Feature bar glow on hover */
+.listing .cursor-pointer:hover .bg-ultramarine {
+  box-shadow:
+    inset 8px 8px 16px rgba(0, 0, 0, 0.08),
+    inset -8px -8px 16px rgba(255, 255, 255, 0.9);
+}
+
+/* ============================= */
+/* ICON STYLING */
+/* ============================= */
+
+.listing svg {
+  color: #6c5ce7;
+  transition: transform 0.3s ease;
+}
+
+.listing .cursor-pointer:hover svg {
+  transform: scale(1.15);
+}
+
+/* ============================= */
+/* RESPONSIVE IMPROVEMENT */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .listing .cursor-pointer {
+    border-radius: 18px;
+  }
+
+  .bg-ultramarine {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

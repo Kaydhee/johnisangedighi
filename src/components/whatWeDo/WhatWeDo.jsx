@@ -1,127 +1,158 @@
-'use client';
-import { motion } from 'framer-motion';
+// "use client";
+// import { motion } from "framer-motion";
 
-import Image from 'next/image';
-import Link from 'next/link';
+// import Image from "next/image";
+// import Link from "next/link";
 
-import HQ from '../../assets/background.jpg';
-import { Ri24HoursFill } from 'react-icons/ri';
-import { IoIosDocument } from 'react-icons/io';
-import { MdVerifiedUser } from 'react-icons/md';
-import { FaNairaSign, FaArrowRightLong } from 'react-icons/fa6';
+// import HQ from "../../assets/background.jpg";
+// import { Ri24HoursFill } from "react-icons/ri";
+// import { IoIosDocument } from "react-icons/io";
+// import { MdVerifiedUser } from "react-icons/md";
+// import { FaNairaSign, FaArrowRightLong } from "react-icons/fa6";
+
+// export default function WhatWeDo() {
+//   return (
+//     <motion.section
+//       initial={{ opacity: 0, y: 60 }}
+//       whileInView={{ opacity: 1, y: 0 }}
+//       transition={{ duration: 0.8 }}
+//       className="w-[90%] mx-auto py-20"
+//     >
+//       <section className="flex flex-col md:flex-row items-center gap-16">
+//         {/* IMAGE SIDE */}
+//         <div className="basis-2/4 flex justify-center">
+//           <div className="relative w-full md:w-[80%] h-[32rem] rounded-[30px] shadow-[15px_15px_30px_#c5cbe3,-15px_-15px_30px_#ffffff] p-5">
+//             <Image
+//               src={HQ}
+//               alt="property image"
+//               fill
+//               className="object-cover rounded-[25px]"
+//             />
+
+//             <Link
+//               href="/about"
+//               className="absolute -bottom-6 -right-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#e9eef5] text-black text-2xl shadow-[10px_10px_20px_#c5cbe3,-10px_-10px_20px_#ffffff] hover:shadow-[inset_8px_8px_15px_#c5cbe3,inset_-8px_-8px_15px_#ffffff] transition-all duration-300"
+//             >
+//               <FaArrowRightLong />
+//             </Link>
+//           </div>
+//         </div>
+
+//         {/* TEXT SIDE */}
+//         <div className="basis-2/4">
+//           <h3 className="text-5xl font-bold mb-4 text-gray-800">What We Do</h3>
+
+//           <p className="text-3xl font-semibold mb-6 text-gray-600">
+//             Why you should choose us?
+//           </p>
+
+//           <p className="text-gray-500 leading-relaxed mb-8">
+//             We provide real estate consultancy services to private and public
+//             sector organizations. Prior to 2007, the Firm concentrated on what
+//             could be called the downstream aspect of the real estate sector.
+//           </p>
+
+//           {/* FEATURE LIST */}
+//           <div className="space-y-6">
+//             {[
+//               {
+//                 icon: <Ri24HoursFill />,
+//                 text: "Find your next property in 24 hours",
+//               },
+//               { icon: <IoIosDocument />, text: "Rental agreements" },
+//               { icon: <MdVerifiedUser />, text: "Life-time guarantee" },
+//               { icon: <FaNairaSign />, text: "House within your budget" },
+//             ].map((item, index) => (
+//               <div
+//                 key={index}
+//                 className="flex items-center gap-6 p-5 rounded-2xl bg-[#e9eef5] shadow-[10px_10px_20px_#c5cbe3,-10px_-10px_20px_#ffffff] hover:shadow-[inset_8px_8px_15px_#c5cbe3,inset_-8px_-8px_15px_#ffffff] transition-all duration-300 cursor-pointer"
+//               >
+//                 <div className="text-2xl text-indigo-500">{item.icon}</div>
+//                 <p className="text-lg font-medium text-gray-700">{item.text}</p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//     </motion.section>
+//   );
+// }
+
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+
+import HQ from "../../assets/background.jpg";
+import { Ri24HoursFill } from "react-icons/ri";
+import { IoIosDocument } from "react-icons/io";
+import { MdVerifiedUser } from "react-icons/md";
+import { FaNairaSign, FaArrowRightLong } from "react-icons/fa6";
 
 export default function WhatWeDo() {
-	return (
-		<motion.section
-			initial={{ opacity: 0, x: -100 }}
-			whileInView={{ opacity: 1, x: 0 }}
-			transition={{ delay: 0.2, duration: 0.8 }}
-			className='w-[90%] mx-auto '>
-			<section className='flex flex-col md:flex-row items-center justify-center mt-[2%] pb-8'>
-				<div className=' basis-2/4 flex items-center justify-center '>
-					<div className='w-full  md:w-1/2 h-[30rem] rounded-xl relative'>
-						<Image
-							src={HQ}
-							alt='property image'
-							width={0}
-							height={0}
-							sizes='100%'
-							style={{
-								width: '100%',
-								height: '100%',
-								objectFit: 'cover',
-								borderRadius: '2rem',
-							}}
-						/>
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="w-[90%] mx-auto py-24"
+    >
+      <section className="flex flex-col md:flex-row items-center gap-20">
+        {/* IMAGE */}
+        <div className="w-full md:basis-2/4 flex justify-center">
+          <div className="relative w-full md:w-[80%] h-[32rem] rounded-[30px] bg-white shadow-[10px_10px_25px_#d9d9d9,-10px_-10px_25px_#ffffff] p-6">
+            <Image
+              src={HQ}
+              alt="property image"
+              fill
+              className="object-cover rounded-[24px]"
+            />
 
-						<button className='bg-secondary p-4 sm:p-6 rounded-full bottom-[-1rem] right-[-1rem] sm:bottom-[-1.5rem] sm:right-[-2rem] absolute text-2xl text-black z-10'>
-							<Link href='/about'>
-								<FaArrowRightLong />
-							</Link>
-						</button>
-					</div>
-				</div>
+            <Link
+              href="/about"
+              className="absolute -bottom-6 -right-6 w-20 h-20 flex items-center justify-center rounded-full bg-white shadow-[6px_6px_15px_#d9d9d9,-6px_-6px_15px_#ffffff] hover:shadow-[inset_6px_6px_12px_#d9d9d9,inset_-6px_-6px_12px_#ffffff] transition-all duration-300 text-black"
+            >
+              <FaArrowRightLong />
+            </Link>
+          </div>
+        </div>
 
-				<div className='mt-[3%] sm:mt-0 basis-2/4 text-white'>
-					<h3 className='text-secondary text-2xl sm:text-3xl md:text-5xl font-bold mb-4'>
-						What We Do
-					</h3>
-					<p className='font-medium text-2xl sm:text-4xl mb-2'>
-						Why you should choose us?
-					</p>
+        {/* TEXT */}
+        <div className="basis-2/4">
+          <h3 className="text-5xl font-bold text-[#1a1a1a] mb-6">What We Do</h3>
 
-					<p className='mb-2 text-sm'>
-						We provide real estate consultancy services to private and public
-						sector organizations. Prior to 2007, the Firm concentrated on what
-						could be called the down stream aspect of real estate sector.
-					</p>
+          <p className="text-3xl font-semibold text-[#333] mb-6">
+            Why you should choose us?
+          </p>
 
-					<div className='flex items-center gap-2 mb-4 text-xl  sm:text-2xl font-medium '>
-						<Ri24HoursFill /> <p>Find your next property in 24hours</p>
-					</div>
-					<div className='flex items-center gap-2 mb-4 text-xl  sm:text-2xl font-medium'>
-						<IoIosDocument /> <p>Rental agreements</p>
-					</div>
-					<div className='flex items-center gap-2 mb-4 text-xl  sm:text-2xl font-medium'>
-						<MdVerifiedUser /> <p>Life-time guarantee</p>
-					</div>
-					<div className='flex items-center gap-2 mb-4 text-xl  sm:text-2xl font-medium'>
-						<FaNairaSign /> <p>House within your budget</p>
-					</div>
-				</div>
-			</section>
-		</motion.section>
-	);
-}
+          <p className="text-[#666] leading-relaxed mb-10">
+            We provide real estate consultancy services to private and public
+            sector organizations. Prior to 2007, the Firm concentrated on the
+            downstream aspect of the real estate sector.
+          </p>
 
-{
-	/* <div className=' p-4 w-full text-center md:text-start md:w-1/2'>
-<h2 className='text-white  text-3xl mb-2'>What we do</h2>
-<p className='text-sm text-white'>
-	We are a firm of Estate Surveyors and Valuers carrying on business
-	Wunder the name and style of JOHN ISANGEDIGHI & ASSOCIATES. We
-	formally commenced operation in November 2007 as an indigenous
-	company, registered with Corporate Affairs Commission, Abuja and
-	recognized as a professional firm of Estate Surveyors and Valuers.
- We are also registered with the Nigerian Institution of Estate
-	Surveyors and Valuers (NIESV) and Estate Surveyors and Valuers
-	Registration Board of Nigeria (ESVARBON) to practice the profession
-	throughout the Federal Republic of Nigeria. 
-</p>
-</div>
+          <div className="space-y-6">
+            {[
+              {
+                icon: <Ri24HoursFill />,
+                text: "Find your next property in 24 hours",
+              },
+              { icon: <IoIosDocument />, text: "Rental agreements" },
+              { icon: <MdVerifiedUser />, text: "Life-time guarantee" },
+              { icon: <FaNairaSign />, text: "House within your budget" },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-6 p-6 rounded-2xl bg-white shadow-[6px_6px_15px_#d9d9d9,-6px_-6px_15px_#ffffff] hover:shadow-[inset_6px_6px_12px_#d9d9d9,inset_-6px_-6px_12px_#ffffff] transition-all duration-300"
+              >
+                <div className="text-xl text-[#1a1a1a]">{item.icon}</div>
 
-<div className='bg-primary text-white p-4 w-full text-center md:text-start md:w-1/2'>
-<h2 className='text-3xl mb-2'>What you are assured</h2>
-
-<p className='text-sm'>
-	We provide real estate consultancy services to private and public
-	sector organizations. Prior to 2007, the Firm concentrated on what
-	could be called the down stream aspect of real estate sector. Having
-	built confidence in the market over the years, the Firm was
-	strategically re- positioned and we expanded our services to include
-	properties and compensation valuation and packaging real estate
-	developments cross the country, among other core services.
-</p>
-</div>
-</section>
-<section className='flex flex-col md:flex-row items-center justify-center md:mt-[-.2%]'>
-
-
-<div className=' text-white p-4 w-full text-center md:text-start md:w-1/2'>
-<h2 className='text-white  text-3xl mb-2'>What we promise</h2>
-
-<p className='text-sm'>
-	It is our company policy to transact business at top level of
-	ethical considerations. Hence, we encourage our staff to be guided
-	by integrity in their dealings with clients and the public in
-	general. Also, we strongly believe that one way of attracting and
-	growing clientele is through first class service delivery.
-	Consequently, we go to great length to render satisfactory service
-	to our clients. These are the guiding philosophy behind the fast
-	pace of growth and expansion of John Isangedighi & Associates within
-	the short period of our existence.
-</p>
-
-<button>About Us</button>
-</div> */
+                <p className="text-lg font-medium text-[#333]">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </motion.section>
+  );
 }

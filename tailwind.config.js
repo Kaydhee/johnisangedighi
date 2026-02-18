@@ -25,10 +25,7 @@ module.exports = {
 			// shadow: '0 0 1.5rem 0 rgba(0, 0, 255, 0.2)',
 			transition: 'all 500ms ease',
 		},
-		// fontFamily: {
-		// 	tilt: 'Tilt Neon',
-		// 	silkScreen: 'Silkscreen',
-		// },
+		
 		screens: {
 			sm: '576px',
 

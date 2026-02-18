@@ -1,4 +1,4 @@
-.slider {
+/* .slider {
 	background-color: transparent;
 	padding: 1rem 0;
 	white-space: nowrap;
@@ -45,4 +45,174 @@
 	100% {
 		transform: translateX(-100%);
 	}
+} */
+
+/* ============================= */
+/* SECTION BACKGROUND MAGIC */
+/* ============================= */
+
+/* ============================= */
+/* SLIDER CONTAINER */
+/* ============================= */
+
+.slider {
+  /* background: linear-gradient(145deg, #eef1f6, #f8f9fc); */
+  padding: 3rem 0;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+
+  /* Keep your cinematic edge fade */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #ffffff 10% 90%,
+    transparent
+  );
+}
+
+/* Subtle background glow */
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(108, 92, 231, 0.15),
+    transparent 70%
+  );
+  top: -200px;
+  right: -200px;
+  animation: glowMove 8s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+@keyframes glowMove {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Pause animation on hover */
+.slider:hover .textSlide {
+  animation-play-state: paused;
+}
+
+/* ============================= */
+/* SLIDING TRACK */
+/* ============================= */
+
+.textSlide {
+  display: inline-flex;
+  align-items: center;
+  animation: 25s slide infinite linear;
+  position: relative;
+  z-index: 2;
+}
+
+/* Keep your original slide animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ============================= */
+/* SERVICE CARD WRAPPER */
+/* ============================= */
+
+.textSlide > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+
+  background: #f4f7fb;
+  padding: 1.5rem;
+  border-radius: 24px;
+
+  box-shadow:
+    12px 12px 25px rgba(0, 0, 0, 0.12),
+    -12px -12px 25px rgba(255, 255, 255, 0.8);
+
+  transition: all 0.4s ease;
+}
+
+/* Hover lift effect */
+.textSlide > div:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow:
+    18px 18px 35px rgba(0, 0, 0, 0.18),
+    -18px -18px 35px rgba(255, 255, 255, 0.9);
+}
+
+/* ============================= */
+/* IMAGE EFFECT */
+/* ============================= */
+
+.textSlide img {
+  border-radius: 18px !important;
+  transition: transform 0.6s ease;
+}
+
+.textSlide > div:hover img {
+  transform: scale(1.08);
+}
+
+/* ============================= */
+/* SERVICE TEXT */
+/* ============================= */
+
+.textSlide p {
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: #6c5ce7;
+
+  /* Subtle outline effect */
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #6c5ce7;
+
+  transition: all 0.3s ease;
+}
+
+/* On hover — fill text */
+.textSlide > div:hover p {
+  -webkit-text-fill-color: #6c5ce7;
+  -webkit-text-stroke-width: 0px;
+  transform: translateY(-3px);
+}
+
+/* Decorative dot if used */
+.textSlide span {
+  background-color: #6c5ce7;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .textSlide > div {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+
+  .textSlide p {
+    font-size: 1.2rem;
+  }
 }

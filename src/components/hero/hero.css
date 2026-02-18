@@ -1,20 +1,223 @@
-/* .text-box {
-	width: 80%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
+/* ============================= */
+/* GLOBAL HERO STYLE */
+/* ============================= */
 
-@media (max-width: 524px) {
-	.hero-section {
-		background: linear-gradient(
-				rgba(226, 244, 254, 0.3),
-				rgba(226, 244, 254, 0.3)
-			),
-			url(../../assets/heroImage.png);
-		background-position: center;
-		background-size: cover;
-		position: relative;
-	}
+section {
+  /* background: #eef1f6; */
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================= */
+/* BACKGROUND IMAGE MAGIC */
+/* ============================= */
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  animation: zoomBg 18s ease-in-out infinite alternate;
+  transform: scale(1);
+}
+
+/* Slow cinematic zoom */
+@keyframes zoomBg {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+/* Smooth fade between slides */
+.transition-opacity {
+  transition: opacity 1.2s ease-in-out;
+}
+
+/* ============================= */
+/* DARK OVERLAYS */
+/* ============================= */
+
+.bg-black\/50 {
+  backdrop-filter: blur(3px);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+}
+
+.bg-black\/10 {
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+/* ============================= */
+/* NEUMORPHIC GLASS PANEL */
+/* ============================= */
+
+.relative.bg-white {
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  box-shadow:
+    12px 12px 30px rgba(0, 0, 0, 0.25),
+    -12px -12px 30px rgba(255, 255, 255, 0.6);
+  animation: floatPanel 6s ease-in-out infinite;
+  transition: all 0.4s ease;
+}
+
+/* Soft floating effect */
+@keyframes floatPanel {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Subtle hover glow */
+.relative.bg-white:hover {
+  box-shadow:
+    16px 16px 40px rgba(0, 0, 0, 0.3),
+    -16px -16px 40px rgba(255, 255, 255, 0.7);
+}
+
+/* ============================= */
+/* TEXT ANIMATIONS */
+/* ============================= */
+
+.animate-slideUp {
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Additional fade effects (used in slides array) */
+.fade-left {
+  animation: fadeLeft 1s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 1s ease forwards;
+}
+
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================= */
+/* NAVIGATION BUTTONS */
+/* ============================= */
+
+button {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: bold;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    8px 8px 18px rgba(0, 0, 0, 0.25),
+    -8px -8px 18px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.15);
+  background: white;
+  box-shadow:
+    12px 12px 25px rgba(0, 0, 0, 0.35),
+    -12px -12px 25px rgba(255, 255, 255, 0.8);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow:
+    inset 6px 6px 12px rgba(0, 0, 0, 0.2),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.6);
+}
+
+/* ============================= */
+/* RESPONSIVENESS */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .relative.bg-white {
+    padding: 20px !important;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+  }
 }
